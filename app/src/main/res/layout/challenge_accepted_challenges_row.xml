@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/challenge_item_background"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/challengeAcceptedChallengesTableLayout"
+        android:stretchColumns="0,1">
+
+        <TableRow
+            android:paddingRight="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:id="@+id/challengeAcceptedChallengesSubjectLabelTextView"
+        android:textStyle="normal|bold"
+        android:text="@string/challengeSubjectLabelTextView" />
+
+        <TextView
+            android:text="Subject Value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/challengeAcceptedChallengesSubjectValueTextView"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        </TableRow>
+        <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:id="@+id/challengeAcceptedChallengesItemline1View"
+                android:background="#dddddd" />
+        </TableRow>
+    <TableRow
+        android:paddingRight="10dp">
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_weight="1"
+    android:id="@+id/challengeAcceptedChallengesCreatedLabelTextView"
+    android:textStyle="normal|bold"
+    android:text="@string/challengeCreatedLabelTextView" />
+
+    <TextView
+        android:text="Created Value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeAcceptedChallengesCreatedValueTextView" />
+    </TableRow>
+        <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/challengeAcceptedChallengesItemline2View"
+                android:layout_weight="1"
+                android:background="#dddddd" />
+        </TableRow>
+        <TableRow
+            android:paddingRight="10dp">
+        <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_below="@+id/challengeAcceptedChallengesCreatedLabelTextView"
+    android:layout_alignParentStart="true"
+    android:layout_weight="1"
+    android:id="@+id/challengeAcceptedChallengesSenderLabelTextView"
+    android:textStyle="normal|bold"
+    android:text="@string/challengeSenderLabelTextView" />
+
+    <TextView
+        android:text="Sender Value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeAcceptedChallengesSenderValueTextView" />
+
+        </TableRow>
+
+        <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/challengeAcceptedChallengesItemline4View"
+                android:layout_weight="1"
+                android:background="#dddddd" />
+        </TableRow>
+
+
+                <TableRow
+            android:paddingRight="10dp">
+    <TextView
+        android:text="@string/challengeMaxScoreLabelTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:id="@+id/challengeAcceptedChallengesMaxScoreLabelTextView"
+        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:id="@+id/challengeAcceptedChallengesMaxScoreValueTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Maximum Points Value" />
+
+</TableRow>
+
+                <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/challengeAcceptedChallengesItemline5View"
+                android:layout_weight="1"
+                android:background="#dddddd" />
+        </TableRow>
+
+
+
+
+
+
+<TableRow
+    android:paddingRight="10dp">
+        <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_weight="1"
+    android:id="@+id/challengeAcceptedChallengesPointsAwardedLabelTextView"
+    android:textStyle="normal|bold"
+    android:text="@string/challengePointsAwardedLabelTextView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeAcceptedChallengesPointsAwardedValueTextView"
+        android:layout_weight="1"
+        android:paddingRight="5dp"
+        android:text="@string/challengePointsAwardedValueTextView" />
+
+</TableRow>
+
+        <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/challengeAcceptedChallengesItemline6View"
+                android:layout_weight="1"
+                android:background="#dddddd" />
+        </TableRow>
+
+ <TableRow
+     android:paddingRight="10dp"
+     >
+        <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_weight="1"
+    android:id="@+id/challengeAcceptedChallengesContactInAddressBookLabelTextView"
+    android:textStyle="normal|bold"
+    android:text="@string/challengeContactInAddressBookLabelTextView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeAcceptedChallengesContactInReceiverAddressBookValueTextView"
+        android:layout_weight="1"
+        android:text="@string/challengeContactInReceiverAddressBookValueTextView" />
+
+</TableRow>
+
+
+</TableLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeAcceptedChallengesItemline7View"
+        android:layout_below="@id/challengeAcceptedChallengesTableLayout"
+        android:background="#aaaaaa" />
+
+    <TextView
+        android:text="@string/challengeMessageLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/challengeAcceptedChallengesItemline7View"
+        android:layout_alignParentStart="true"
+        android:id="@+id/challengeAcceptedChallengesMessageLabelTextView"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Message Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeAcceptedChallengesMessageValueTextView"
+        android:layout_below="@+id/challengeAcceptedChallengesMessageLabelTextView"
+        android:layout_alignParentStart="true" />
+
+
+
+
+
+
+</RelativeLayout>
+

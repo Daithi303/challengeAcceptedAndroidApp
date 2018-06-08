@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/challenge_item_background"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/challengeOutboxTableLayout"
+        android:stretchColumns="0,1">
+
+        <TableRow
+            android:paddingRight="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:id="@+id/challengeOutboxSubjectLabelTextView"
+        android:textStyle="normal|bold"
+        android:text="@string/challengeSubjectLabelTextView" />
+
+        <TextView
+            android:text="Subject Value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/challengeOutboxSubjectValueTextView"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        </TableRow>
+        <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:id="@+id/challengeOutboxItemline1View"
+                android:background="#dddddd" />
+        </TableRow>
+    <TableRow
+        android:paddingRight="10dp">
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_weight="1"
+    android:id="@+id/challengeOutboxCreatedLabelTextView"
+    android:textStyle="normal|bold"
+    android:text="@string/challengeCreatedLabelTextView" />
+
+    <TextView
+        android:text="Created Value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeOutboxCreatedValueTextView" />
+    </TableRow>
+        <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/challengeOutboxItemline2View"
+                android:layout_weight="1"
+                android:background="#dddddd" />
+        </TableRow>
+        <TableRow
+            android:paddingRight="10dp">
+        <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_below="@+id/challengeOutboxCreatedLabelTextView"
+    android:layout_alignParentStart="true"
+    android:layout_weight="1"
+    android:id="@+id/challengeOutboxReceiverLabelTextView"
+    android:textStyle="normal|bold"
+    android:text="@string/challengeReceiverLabelTextView" />
+
+    <TextView
+        android:text="Receiver Value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeOutboxReceiverValueTextView" />
+
+        </TableRow>
+        <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/challengeOutboxItemline3View"
+                android:layout_weight="1"
+                android:background="#dddddd" />
+        </TableRow>
+        <TableRow
+            android:paddingRight="10dp">
+        <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_weight="1"
+    android:id="@+id/challengeOutboxStatusLabelTextView"
+    android:textStyle="normal|bold"
+    android:text="@string/challengeStatusLabelTextView" />
+
+    <TextView
+        android:text="@string/notYetAttemptedValue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeOutboxStatusValueTextView" />
+
+        </TableRow>
+        <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/challengeOutboxItemline4View"
+                android:layout_weight="1"
+                android:background="#dddddd" />
+        </TableRow>
+
+
+                <TableRow
+            android:paddingRight="10dp">
+    <TextView
+        android:text="@string/challengeMaxScoreLabelTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:id="@+id/challengeOutboxMaxScoreLabelTextView"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Maximum Score Value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:id="@+id/challengeOutboxMaxScoreValueTextView" />
+
+</TableRow>
+
+                <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/challengeOutboxItemline5View"
+                android:layout_weight="1"
+                android:background="#dddddd" />
+        </TableRow>
+
+
+
+
+
+
+<TableRow
+    android:paddingRight="10dp">
+        <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_weight="1"
+    android:id="@+id/challengeOutboxPointsAwardedLabelTextView"
+    android:textStyle="normal|bold"
+    android:text="@string/challengePointsAwardedLabelTextView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeOutboxPointsAwardedValueTextView"
+        android:layout_weight="1"
+        android:paddingRight="5dp"
+        android:text="@string/challengePointsAwardedValueTextView" />
+
+</TableRow>
+
+        <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/challengeOutboxItemline6View"
+                android:layout_weight="1"
+                android:background="#dddddd" />
+        </TableRow>
+
+ <TableRow
+     android:paddingRight="10dp"
+     >
+        <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_weight="1"
+    android:id="@+id/challengeOutboxContactInReceiverAddressBookLabelTextView"
+    android:textStyle="normal|bold"
+    android:text="@string/challengeContactInReceiverAddressBookLabelTextView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeOutboxContactInReceiverAddressBookValueTextView"
+        android:layout_weight="1"
+        android:text="@string/challengeContactInReceiverAddressBookValueTextView" />
+
+</TableRow>
+
+
+</TableLayout>
+
+
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeOutboxItemline7View"
+        android:layout_below="@id/challengeOutboxTableLayout"
+        android:background="#aaaaaa" />
+
+    <TextView
+        android:text="@string/challengeMessageLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/challengeOutboxItemline7View"
+        android:layout_alignParentStart="true"
+        android:id="@+id/challengeOutboxMessageLabelTextView"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Message Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeOutboxMessageValueTextView"
+        android:layout_below="@+id/challengeOutboxMessageLabelTextView"
+        android:layout_alignParentStart="true" />
+
+
+
+
+
+
+</RelativeLayout>

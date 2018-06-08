@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_game_inbox"
+            android:title="Inbox" />
+        <item
+            android:id="@+id/nav_game_outbox"
+            android:title="Outbox" />
+        <item
+            android:id="@+id/nav_game_accepted_challenges"
+            android:title="Accepted challenges" />
+        <item
+            android:id="@+id/nav_game_declined_challenges"
+            android:title="Declined challenges" />
+        <item
+            android:id="@+id/nav_game_my_challenges"
+            android:title="My Challenges" />
+        <item
+            android:id="@+id/nav_game_push_challenge"
+            android:title="Push Challenge" />
+        <item
+            android:id="@+id/nav_game_scoreboard"
+            android:title="Scoreboard" />
+    </group>
+
+
+
+</menu>

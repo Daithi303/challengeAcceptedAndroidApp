@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "875313999041",
+    "firebase_url": "https://challengeacceptedproject-3c9d3.firebaseio.com",
+    "project_id": "challengeacceptedproject-3c9d3",
+    "storage_bucket": "challengeacceptedproject-3c9d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875313999041:android:c80c2f8a054622c7",
+        "android_client_info": {
+          "package_name": "ie.dodwyer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875313999041-e8ui204lg9juq74lp0t32ddn339nhi2l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmuuFH4pGWA12twH8HpVzX4lqovjz3bfU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

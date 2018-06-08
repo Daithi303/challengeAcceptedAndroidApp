@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_attempt_challenge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ie.dodwyer.activities.AttemptChallengeActivity"
+    tools:showIn="@layout/activity_attempt_challenge">
+
+    <TextView
+        android:text="@string/attemptChallengeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/attemptChallengeTitleTextView"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/background_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/smsLayout"
+        android:background="@drawable/sms_message_background"
+        android:layout_below="@id/attemptChallengeTitleTextView"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+
+        <TextView
+            style="@style/FullWidthEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/attemptSmsMessageSubjectTextView"
+            android:maxLength="30"
+            android:paddingLeft="0dp"
+            android:textSize="16sp"
+            android:text="@string/attemptSmsMessageSubjectTextView"
+            android:padding="8dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/attemptSmsMessageline1View"
+            android:layout_below="@id/attemptSmsMessageSubjectTextView"
+            android:background="#aaaaaa" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:id="@+id/attemptSmsMessageMessageFlexboxLayout"
+            app:flexWrap="wrap"
+            app:alignItems="flex_start"
+            app:alignContent="flex_start"
+            app:showDividerVertical="beginning|end"
+            app:showDividerHorizontal="beginning|middle|end"
+            app:dividerDrawable="@drawable/divider"
+            >
+            </com.google.android.flexbox.FlexboxLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/declineChallengeButton"
+        android:layout_width="150dp"
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:id="@+id/declineChallengeButton"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:text="@string/attemptChallengeButton"
+        android:layout_width="150dp"
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:id="@+id/attemptChallengeButton"
+        android:textColor="@android:color/background_light"
+        android:layout_alignBaseline="@+id/declineChallengeButton"
+        android:layout_alignBottom="@+id/declineChallengeButton"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maxScoreValueTextView"
+        android:layout_alignBaseline="@+id/maxScoreLabelTextView"
+        android:layout_alignBottom="@+id/maxScoreLabelTextView"
+        android:layout_alignParentEnd="true"
+        android:text="@string/maxScoreValueTextView" />
+
+    <TextView
+        android:id="@+id/contact1TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/oneOfTheFollowingContactsTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/contact1TextView"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="@string/oneOfTheFollowingContactsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/oneOfTheFollowingContactsTextView"
+        android:layout_below="@+id/maxScoreLabelTextView"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/maxScoreLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maxScoreLabelTextView"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/smsLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:id="@+id/contact2TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/contact1TextView"
+        android:layout_below="@+id/contact1TextView"
+        android:layout_marginTop="5dp"
+        android:text="@string/contact2TextView"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/contact3TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/contact2TextView"
+        android:layout_below="@+id/contact2TextView"
+        android:layout_marginTop="5dp"
+        android:text="@string/contact3TextView"
+        android:textAlignment="center" />
+
+
+</RelativeLayout>

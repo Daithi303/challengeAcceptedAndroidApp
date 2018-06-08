@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/player_item_gradient_background"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableLayout
+                android:id="@+id/gameTableLayout"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/gameNameTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="2"
+                        android:text="Game Name value"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/gameStatusTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="3"
+                        android:text="Game Status value"
+                        android:textSize="18sp" />
+
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/gameCreatedByLabelTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/gameCreatedByLabelTextView" />
+
+                    <TextView
+                        android:id="@+id/gameCreatedByValueTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Created By value" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/gameTargetScoreLabelTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/gameTargetScoreTextView" />
+
+                    <TextView
+                        android:id="@+id/gameTargetScoreValueTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Target Score Value" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/gameCreatedLabelTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/gameCreatedLabelTextView"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/gameCreatedValueTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Created Value" />
+                </TableRow>
+
+                <TableRow android:id="@+id/gameWinnerTableRow">
+
+                    <TextView
+                        android:id="@+id/gameWinnerLabelTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="@string/gameWinnerLabelTextView"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/gameWinnerValueTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="Winner Value" />
+                </TableRow>
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ButtonsLayout"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/email_ic_icon_small"
+                    android:id="@+id/newChallengeNotification"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="13dp"
+                    android:layout_alignParentBottom="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/ic_menu_delete"
+                    android:id="@+id/deleteNotification"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</RelativeLayout>

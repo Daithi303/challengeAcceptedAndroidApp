@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/background"
+    android:id="@+id/activity_add_player">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:id="@+id/addPlayerHeaderTextView"
+        android:text="@string/addPlayerHeaderTextView" />
+
+    <EditText
+        android:id="@+id/addPlayerSearchEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addPlayerSubHeaderLabelTextView"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Please enter a name"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/addPlayerSubHeaderLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addPlayerHeaderTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/addPlayerSubHeaderLabelTextView"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="65dp"
+        android:id="@+id/addPlayerListFragment"
+        android:layout_below="@id/addPlayerSearchEditText">
+
+    </FrameLayout>
+    <Button
+        android:text="@string/addPlayerButton"
+        android:layout_width="160dp"
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/addPlayerButton"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+<!--    <TextView
+        android:text="@string/noPlayersAddPlayerTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:id="@+id/noPlayersAddPlayerTextView"
+        tools:text="@string/noPlayersAddPlayerTextView"
+        android:textSize="14sp" />-->
+</RelativeLayout>
+

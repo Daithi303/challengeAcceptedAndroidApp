@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/player_item_gradient_background"
+    >
+
+    <TextView
+        android:text="Player Name value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerNameTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Email: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerEmailLabelTextView"
+        android:layout_below="@+id/playerNameTextView"
+        android:layout_alignStart="@+id/playerNameTextView" />
+
+    <TextView
+        android:text="Email value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playerEmailValueTextView"
+        android:layout_alignBaseline="@+id/playerEmailLabelTextView"
+        android:layout_alignBottom="@+id/playerEmailLabelTextView"
+        android:layout_toEndOf="@+id/playerEmailLabelTextView" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/playerNameTextView"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/playerAddRemoveCheckBox" />
+
+
+</RelativeLayout>

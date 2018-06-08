@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/createChallengeMenuItem"
+        android:orderInCategory="100"
+        android:title="@string/createChallengeMenuItem"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/addPlayerMenuItem"
+        android:orderInCategory="100"
+        android:title="@string/addPlayerMenuItem"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/backToMyGamesMenuItem"
+        android:orderInCategory="100"
+        android:title="@string/backToMyGamesMenuItem"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/logOutMenuItem"
+        android:orderInCategory="100"
+        android:title="@string/logOutMenuItem"
+        app:showAsAction="never" />
+
+</menu>

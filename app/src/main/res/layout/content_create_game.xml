@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_create_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ie.dodwyer.activities.CreateGameActivity"
+    tools:showIn="@layout/activity_create_game">
+
+    <TextView
+        android:text="@string/createGameHeaderTectView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createGameHeaderTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createGameHeaderTextView"
+        android:layout_alignParentStart="true"
+        android:id="@+id/createGameInfoLayout"
+
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:text="@string/gameTitleTextView"
+                android:layout_width="0dp"
+                android:layout_weight="0.50"
+                android:layout_height="wrap_content"
+                android:id="@+id/gameTitleTextView"
+                />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/gameTitleEditText"
+                android:layout_weight="0.50"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="@string/gameTargetScoreTextView"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.50"
+                android:id="@+id/targetScoreTextView" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="0.50"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:imeOptions="actionDone"
+                android:id="@+id/targetScoreEditText" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:id="@+id/createGameMiddleBorderTextView"
+        android:layout_below="@+id/createGameInfoLayout"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        android:text="@string/selectPlayersTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectPlayersTextView"
+        android:layout_below="@+id/createGameMiddleBorderTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <FrameLayout
+        android:id="@+id/playerListFragment"
+        android:layout_width="match_parent"
+        android:layout_marginTop="13dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/selectPlayersTextView"
+        >
+
+    </FrameLayout>
+
+    <Button
+        android:text="@string/createGameButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false"
+        android:layout_marginTop="5dp"
+        android:id="@+id/createGameButton"
+        android:layout_below="@+id/playerListFragment"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light" />
+
+
+</RelativeLayout>

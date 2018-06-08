@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/challenge_item_background"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/challengeMyChallengesTableLayout"
+        android:stretchColumns="0,1">
+
+    <TableRow
+        android:paddingRight="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:id="@+id/challengeSubjectLabelTextView"
+        android:text="@string/challengeSubjectLabelTextView"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Subject Value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:id="@+id/challengeSubjectValueTextView"
+         />
+    </TableRow>
+        <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:id="@+id/challengeMyChallengesItemline1View"
+                android:background="#dddddd" />
+        </TableRow>
+
+
+        <TableRow
+            android:paddingRight="10dp">
+    <TextView
+        android:text="@string/challengeCreatedLabelTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:id="@+id/challengeCreatedLabelTextView"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Created Value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:id="@+id/challengeCreatedValueTextView" />
+
+</TableRow>
+
+        <TableRow>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:id="@+id/challengeMyChallengesItemline2View"
+                android:background="#dddddd" />
+        </TableRow>
+
+        <TableRow
+            android:paddingRight="10dp">
+    <TextView
+        android:text="@string/challengeMaxScoreLabelTextView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:id="@+id/challengeMaxScoreLabelTextView"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Maximum Points Value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:id="@+id/challengeMaxScoreValueTextView" />
+
+</TableRow>
+</TableLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeItemline1View"
+        android:layout_below="@id/challengeMyChallengesTableLayout"
+        android:background="#aaaaaa" />
+
+    <TextView
+        android:text="@string/challengeMessageLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/challengeItemline1View"
+        android:layout_alignParentStart="true"
+        android:id="@+id/challengeMessageLabelTextView"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Message Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/challengeMessageValueTextView"
+        android:layout_below="@+id/challengeMessageLabelTextView"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="3dp"
+        android:id="@+id/challengeItemline2View"
+        android:layout_below="@id/challengeMessageValueTextView"
+        android:background="@color/colorSecondary"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/challengeMessageValueTextView"
+        android:id="@+id/challengeEditDeleteButtonContainer">
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@android:drawable/ic_menu_edit"
+            android:id="@+id/challengeEditImageView"
+            android:layout_weight="1" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@android:drawable/ic_menu_delete"
+            android:id="@+id/challengeDeleteImageView"
+            android:layout_weight="1" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

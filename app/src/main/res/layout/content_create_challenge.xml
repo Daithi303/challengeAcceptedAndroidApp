@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_create_challenge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ie.dodwyer.activities.CreateChallengeActivity"
+    tools:showIn="@layout/activity_create_challenge">
+
+    <TextView
+        android:text="@string/createChallengeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/createChallengeTitleTextView"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/background_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/smsLayout"
+        android:background="@drawable/sms_message_background"
+        android:layout_below="@id/createChallengeTitleTextView"
+        android:layout_marginTop="20dp"
+        android:weightSum="1">
+
+        <EditText
+            style="@style/FullWidthEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/createSmsMessageSubjectEditText"
+            android:maxLength="30"
+            android:hint="Subject"
+            android:imeOptions="actionNext"
+            android:inputType="textAutoCorrect|textCapSentences|text"
+            android:nextFocusDown="@+id/createSmsMessageMessagetEditText"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:id="@+id/createSmsMessageline1View"
+            android:layout_below="@id/createSmsMessageSubjectEditText"
+            android:background="#aaaaaa" />
+
+        <EditText
+            style="@style/FullWidthEditText"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/createSmsMessageMessagetEditText"
+            android:layout_below="@id/createSmsMessageline1View"
+            android:focusableInTouchMode="true"
+            android:maxLength="200"
+            android:gravity="top"
+            android:imeOptions="actionDone"
+            android:scrollHorizontally="false"
+            android:inputType="textAutoCorrect|textCapSentences|text"
+            android:hint="Message (Maximum characters: 200)"
+            android:layout_weight="26.50" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/setMaxScoreValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/setMaxScoreValueTextView"
+        android:layout_below="@+id/smsLayout"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/setMaxScoreValueSpinner"
+        android:layout_alignTop="@+id/setMaxScoreValueTextView"
+
+        android:spinnerMode="dialog" />
+
+    <Button
+        android:text="@string/createChallengeButton"
+        android:layout_width="150dp"
+        android:background="@drawable/rounded_button"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setMaxScoreValueSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:id="@+id/createChallengeButton"
+        android:textColor="@android:color/background_light" />
+
+
+</RelativeLayout>
